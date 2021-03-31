@@ -1,0 +1,82 @@
+
+.services {
+    padding: 80px;
+    &__header {
+        font-size: 48px;
+        font-weight: 800;
+        text-align: center;
+        span {
+            color: $primary-color;
+        }
+    }
+    &__items {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    &__item {
+        width: 300px;
+        height: 400px;
+        padding: 80px 50px 10px 50px;
+        margin: 0 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: all 0.3s ease-in-out;
+        &_icon {
+            width: 90px;
+            cursor: pointer;
+            &::before {
+                content: url(../img/Polygon.png);
+                position: absolute; 
+                transform: translate(-25%, -27%);
+                z-index: -1;
+                transition: all 1s ease;     
+            }
+
+            &:hover::before {
+                transform: translate(-25%, -27%) rotateZ(180deg);
+            }
+            
+        }
+
+        &_text {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            margin-top: 70px;
+            text-align: center;
+        }
+
+        .more {
+            margin: 40px auto;
+            display: flex;
+            align-items: center;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            &__text {
+                color: $primary-color;
+                margin-right: 5px;
+            }
+            &__icon {
+                width: 15px;
+                height: 15px;
+                border: 1px solid $primary-color;
+                border-radius: 50%;
+                img {
+                    display: block;
+                    transform: translate(10%, 25%);
+                }
+            }
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        // &:hover {
+        //     box-shadow: 0px 5px 10px 5px rgba($color: #000000, $alpha: 0.2);
+        // }
+    }
+    
+
+}
