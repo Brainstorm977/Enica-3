@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="./css/style.min.css">
     <title>Enica Express | Грузоперевозки</title>
 </head>
 <body>
 
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="header__wrapper">
                 <div class="logo">
-                    <img class="logo__img" src="./img/logo.png" alt="">
+                    <img id="logo" class="logo__img" src="./img/logo.png" alt="">
                     <div class="logo__text"><span>ENICA</span> EXPRESS</div>
                 </div>
                 <nav class="nav">
@@ -33,11 +34,12 @@
     </header>
 
     <main>
+        <div class="dumb"></div>
         <section class="hero">
             <div class="container">
-                <h1 class="hero__header"><span>Надежные</span><br> линии бизнеса</h1>
-                <div class="hero__text">Международные автоперевозки по странам СНГ и Европы. Свои тентованные и рефрижераторные автопоезда</div>
-                <div class="contact-us">
+                <h1 class="hero__header animate__animated animate__fadeInUp"><span>Надежные</span><br> линии бизнеса</h1>
+                <div class="hero__text animate__animated animate__fadeInUp ">Международные автоперевозки по странам СНГ и Европы. Свои тентованные и рефрижераторные автопоезда</div>
+                <div class="contact-us animate__animated animate__fadeInUp ">
                     <div class="contact-us__text">Напишите нам</div>
                     <div class="contact-us__icon">
                         <img src="./img/mail.png" alt="mail">
@@ -48,12 +50,12 @@
 
         <section class="services" id="services">
             <div class="container">
-                <h2 class="services__header">Наши <span>услуги</span></h2>
+                <h2 class="services__header animate__animated animate__fadeInUp animate__delay-1s wow">Наши <span>услуги</span></h2>
 
                 <div class="services__items">
                     <div class="services__item">
-                        <div class="services__item_icon">
-                            <img src="./img/cargo.png" alt="cargo">
+                        <div class="services__item_icon animate__animated animate__fadeInUp animate__delay-1s wow">
+                            <img src="./img/services_01.png" alt="cargo">
                         </div>
                         <div class="services__item_text">Международные перевозки по странам СНГ и Европы</div>
                         <div class="more">
@@ -62,8 +64,8 @@
                         </div>
                     </div>
                     <div class="services__item">
-                        <div class="services__item_icon">
-                            <img src="./img/cargo.png" alt="cargo">
+                        <div class="services__item_icon animate__animated animate__fadeInUp animate__delay-1s wow">
+                            <img src="./img/services_02.png" alt="cargo">
                         </div>
                         <div class="services__item_text">Международные перевозки по странам СНГ и Европы</div>
                         <div class="more">
@@ -72,8 +74,8 @@
                         </div>
                     </div>
                     <div class="services__item">
-                        <div class="services__item_icon">
-                            <img src="./img/cargo.png" alt="cargo">
+                        <div class="services__item_icon animate__animated animate__fadeInUp animate__delay-1s wow">
+                            <img src="./img/services_03.png" alt="cargo">
                         </div>
                         <div class="services__item_text">Международные перевозки по странам СНГ и Европы</div>
                         <div class="more">
@@ -87,7 +89,7 @@
         </section>
     </main>    
 
-    
-    
+    <script src="./wow.min.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
